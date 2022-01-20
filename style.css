@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+
+html {
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0;
+    padding: 5rem;
+    background-color: #f2f2f2;
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+.product-card {
+    background-color: #ffffff;
+    padding: 1rem;
+    width: 300px;
+    border: 1px dashed transparent
+}
+
+.product-card:hover {
+    outline: 2px dashed slategray;
+    cursor: pointer;
+}

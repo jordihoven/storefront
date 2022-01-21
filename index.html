@@ -8,15 +8,20 @@
     <title>Storefront</title>
 </head>
 <body>
-    <!-- Intro -->
-    <h1>Hi! Wij zijn Drinkz</h1>
-    <h3>Digitaliseer je verkoop, verkoop via Drinkz.</h3>
+
+    <!-- Cart -->
+    <div class="cart">
+        <h3>Jouw Winkelmandje</h3>
+        <p class="cart-total">Leeg :(</p>
+        <button class="checkout">Afrekeken</button>
+    </div>  
     <!-- Product Card -->
     <div class="product-card">
         <img class="image" loading="lazy" src="">
         <h3 class="title"></h3>
         <p class="description"></p>
-        <button class="add-to-cart">Add</button>
+        <button class="add-to-cart">+ Voeg Toe</button>
+        <button class="remove-from-cart">- Verwijder</button>
     </div>
     <!-- Loading latest Shopify Buy SDK -->
     <script src="http://sdks.shopifycdn.com/js-buy-sdk/v2/latest/index.umd.min.js"></script>

@@ -1,3 +1,4 @@
+/* General Styling */
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
 
 html {
@@ -5,13 +6,37 @@ html {
     margin: 0;
     padding: 5rem;
     background-color: #f2f2f2;
+    background-image: url("https://picsum.photos/id/10/2500/1667");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% 10rem;
 }
 
-img {
-    height: auto;
+button {
+    outline: none;
+    background-color: #f2f2f2;
+    border: none;
+    padding: .5rem 1rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    opacity: .8;
+}
+
+/* Cart */
+.cart {
+    margin-bottom: 4rem;
+    background-color: #ffffff;
     width: 100%;
+    padding: 1rem;
+    border: 1px dashed transparent;
 }
 
+/* Product Card */
 .product-card {
     background-color: #ffffff;
     padding: 1rem;
@@ -21,5 +46,11 @@ img {
 
 .product-card:hover {
     outline: 2px dashed slategray;
-    cursor: pointer;
+}
+
+.product-card img {
+    height: auto;
+    max-height: 200px;
+    width: 100%;
+    object-fit: cover;
 }

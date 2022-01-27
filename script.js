@@ -64,6 +64,7 @@ client.collection.fetchAllWithProducts().then((collections) => {
         //remove from cart
         removeFromCartBtn.onclick = function() {
             //fetching the current checkout
+            // FIXME: See why this throws an error on the first click!
             client.checkout.fetch(currentCheckoutId).then((checkout) => {
                 console.log(checkout.lineItems[0].id);
                 lineItemsToRemove = checkout.lineItems[0].id;

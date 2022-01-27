@@ -8,19 +8,21 @@
     <title>Storefront</title>
 </head>
 <body>
-
     <!-- Cart -->
-    <div class="cart">
+    <header class="cart">
         <h3>Jouw Winkelmandje</h3>
         <p class="cart-total">Leeg :(</p>
         <button class="checkout">Afrekeken</button>
-    </div>  
+    </header>  
     <!-- Dynamic Grid Container -->
-    <div class="grid-container">
+    <main class="grid-container">
         <!-- Grid items are loaded here via script.js! -->
-    </div>
+    </main>
+    <footer>
+        Gebouwd met <a target="_blank" href="https://shopify.github.io/js-buy-sdk/">Shopify Storefront JS</a>
+    </footer>
     <!-- Loading latest Shopify Buy SDK -->
-    <script src="http://sdks.shopifycdn.com/js-buy-sdk/v2/latest/index.umd.min.js"></script>
+    <script src="https://sdks.shopifycdn.com/js-buy-sdk/v2/latest/index.umd.min.js"></script>
     <!-- Loading custom JS -->
     <script src="script.js"></script>
 </body>

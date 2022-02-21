@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/src/style.css">
     <title>Storefront</title>
 </head>
 <body>
-    <!-- Cart -->
     <header class="cart">
         <h3>Jouw Winkelmandje</h3>
         <p class="cart-total">Leeg :(</p>
         <button class="checkout">Afrekeken</button>
     </header>  
-    <!-- Dynamic Grid Container -->
     <main class="grid-container">
         <!-- Grid items are loaded here via script.js! -->
     </main>
     <footer>
         Gebouwd met <a target="_blank" href="https://shopify.github.io/js-buy-sdk/">Shopify Storefront JS</a>
     </footer>
+
     <!-- Loading latest Shopify Buy SDK -->
     <script src="https://sdks.shopifycdn.com/js-buy-sdk/v2/latest/index.umd.min.js"></script>
     <!-- Loading custom JS -->
-    <script src="script.js"></script>
+    <script type="module" src="/functions/token-hider/token-hider.js"></script>
+    <script src="/src/script.js"></script>
 </body>
 </html>

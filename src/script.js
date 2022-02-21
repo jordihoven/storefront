@@ -4,6 +4,10 @@ const client = ShopifyBuy.buildClient({
     storefrontAccessToken: 'f03245f1af9d31e8b41d045819e8bd40'
 });
 
+// env variables
+const topSecretRecipe = process.env.API_TOKEN;
+console.log(topSecretRecipe);
+
 // Creating Checkout
 client.checkout.create().then((checkout) => {
     currentCheckout = checkout;

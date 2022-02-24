@@ -1,7 +1,9 @@
 //Initialising the client...
 const client = ShopifyBuy.buildClient({
-    domain: 'drinkz-development-store.myshopify.com',
-    storefrontAccessToken: 'f03245f1af9d31e8b41d045819e8bd40'
+    domain: 'drinkz123.myshopify.com',
+    storefrontAccessToken: '367c90263dad51dcd09f790472d20442'
+    //dev domain: environment: domain: 'drinkz-development-store.myshopify.com',
+    //dev token: storefrontAccessToken: 'f03245f1af9d31e8b41d045819e8bd40'
 });
 
 // Creating Checkout
